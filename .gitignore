@@ -95,3 +95,8 @@ Desktop.ini
 
 # PowerShell
 *.ps1~
+
+
+#credentials json(Google Oauth)
+credentials.json
+token.json
