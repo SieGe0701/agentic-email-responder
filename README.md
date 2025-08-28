@@ -60,3 +60,4 @@ agentic-email-responder/
 - Add approval step before sending replies
 - Swap in open-source models (Groq, TogetherAI, Hugging Face) if desired
 - Extend agent logic (e.g., ignore spam, auto-confirm meetings)
+- Add memory to store context for each email chain.
