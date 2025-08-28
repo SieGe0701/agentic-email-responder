@@ -34,22 +34,25 @@ This project uses Gmail API + a Large Language Model (via LangChain) to:
 
 ---
 
+
 ## Project Structure
-`
-EmailResponder/
-â”‚â”€â”€ venv/                 # Virtual environment
-â”‚â”€â”€ src/
-â”‚   â”œâ”€â”€ main.py           # Entry point
-â”‚   â”œâ”€â”€ gmail_utils.py    # Gmail API functions
-â”‚   â”œâ”€â”€ llm_utils.py      # LLM summarization + reply
-â”‚â”€â”€ data/                 # Store cached emails
-â”‚â”€â”€ logs/                 # Log files
-â”‚â”€â”€ requirements.txt
-â”‚â”€â”€ .env
-â”‚â”€â”€ README.md
-â”‚â”€â”€ credentials.json      # (to be added manually)
-â”‚â”€â”€ token.json            # Generated after first login
-`
+
+```
+agentic-email-responder/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── credentials.json         # (to be added manually, if using Gmail API)
+├── token.json               # (if using Gmail API OAuth)
+├── data/                    # Store cached emails (optional, currently empty)
+├── logs/                    # Log files (optional, currently empty)
+├── src/
+│   ├── main.py              # Entry point
+│   ├── gmail_utils.py       # IMAP/SMTP (and optional Gmail API) functions
+│   ├── llm_utils.py         # LLM summarization + reply
+│   └── .env                 # API keys and secrets (Gemini, email, etc.)
+└── venv/                    # Virtual environment (not tracked by git)
+```
 
 ---
 
