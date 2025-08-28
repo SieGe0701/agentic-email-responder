@@ -82,14 +82,3 @@ def send_email(to, subject, body_text):
     return sent
 
 
-if __name__ == "__main__":
-    emails = get_unread_emails(max_results=5)
-    for e in emails:
-        print("=" * 50)
-        print(f"From: {e['from']}")
-        print(f"Subject: {e['subject']}")
-        print(f"Body: {e['body'][:200]}...")  # first 200 chars
-        # Example: mark email as read
-        mark_as_read(e["id"])
-        # Example: send a reply (you can comment this out if not needed)
-        send_email(e["from"], f"Re: {e['subject']}", "Thanks for your email! This is an automated reply.")

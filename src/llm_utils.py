@@ -41,21 +41,3 @@ def summarize_and_reply(email_text: str) -> dict:
 
     return {"summary": summary, "reply": reply}
 
-def main():
-    sample_email = """
-    Hi Srinivas, 
-    
-    I wanted to remind you about our meeting scheduled for tomorrow at 3 PM. 
-    Please let me know if you’re still available or if we need to reschedule.
-    
-    Best, 
-    John
-    """
-
-    print("---- Testing Email Processor ----")
-    result = summarize_and_reply(sample_email)
-    print("Summary:\n", result["summary"])
-    print("\nReply:\n", result["reply"])
-
-if __name__ == "__main__":
-    main()
