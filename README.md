@@ -17,9 +17,9 @@ This project uses Gmail API + a Large Language Model (via LangChain) to:
 
 2. Add your **API key** to .env:
    `
-   OPENAI_API_KEY=your_key_here
+   GEMINI_API_KEY=your_key_here
    `
-   (Alternatively, replace with Groq/Hugging Face TogetherAI depending on provider.)
+   (Alternatively, replace with Gemini Groq/Hugging Face TogetherAI depending on provider.)
 
 3. Enable Gmail API:
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
