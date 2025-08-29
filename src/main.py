@@ -29,7 +29,7 @@ def main():
         print(f"\n[Filter] Classified as: {response['label']} | Confidence: {response['confidence']} | Reason: {response['reasons']}")
 
         if response['label'] == "spam" or response['label'] == "phishing":
-            print(f"⚠️ Detected {response['label'].upper()} email. Taking action...")
+            print(f"⚠️ Detected {response['label'].upper()} email.")
 
             continue  # skip summarization & reply
 
